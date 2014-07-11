@@ -1,11 +1,11 @@
-Source: opi-theme
+Source: opi-themes
 Section: devel
 Priority: optional
 Maintainer: PA Nilsson <pa@openproducts.se>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: opi-theme
+Package: opi-themes
 Architecture: all
 Depends: 
 Conflicts: 
