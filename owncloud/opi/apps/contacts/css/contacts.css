@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+#contactsHeader,#contactsHeader td.actions {
+	top : 0px;
+	height : 43px;
+	padding-top:10px;
+}
+#contactsHeader td.actions {
+	margin-right : 235px;
+}
+#app-navigation,#app-content {
+	padding-top : 43px;
+}
+
+#app-navigation li:hover a {
+	background-color : #f1c791;
+	color : #000000;
+}
+
+#app-navigation .active a{
+	background-color : #F18700;
+	color:#FFFFFF;
+}
+
+#app-navigation, #app-navigation ul li,#app-navigation ul li a {
+	background-color : #272727;
+	color:#FFFFFF;
+}
+button.primary {
+	background : #F18700;
+}
+	
