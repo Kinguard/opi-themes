@@ -70,3 +70,28 @@
 .boxtitle, .uibox .listing thead td {
 	border-bottom : 1px solid #000;
 }
+#taskbar a span.button-inner {
+	background: url(images/buttons.png) -1000px 0 no-repeat;
+}
+#login-form .box-inner {
+	background : url(images/OP_Pattern.png) center no-repeat #FFF;
+	border : 1px solid #f18700;
+}
+#login-form #logo {
+	width : 150px;
+}
+#login-form td.title {
+	color : #000;
+	text-shadow: none;
+	font-size : 14px;
+}
+#login-form input.button {
+	color : #FFF;
+	text-shadow : none;
+	background : #f18700;
+	font-size : 16px;
+	padding : 15px 25px;
+}
+	
+	
+
