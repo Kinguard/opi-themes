@@ -1,3 +1,6 @@
+#update-notification {
+	display : none !important;
+}
 #body-login {
 	background-image : url('../img/OpenProducts_Pattern.png');
 	background-color :  #ffffff;
@@ -17,8 +20,13 @@
 }
 #body-login fieldset {
 	padding : 50px;
-	background : #000000;
+	background : #fff;
+	border : 1px solid #F18700;
 }
+#body-login form input[type="checkbox"]+label {
+	color : #000;
+}
+
 #body-login fieldset label.infield {
 	top : 1.05em;
 }
