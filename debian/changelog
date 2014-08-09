@@ -1,3 +1,9 @@
+opi-themes (1.3) vili; urgency=low
+
+  * Moved closing 'x' in files->slideshow not to collide with 'opi-apps' icon.
+
+ -- PA Nilsson <pa@openproducts.se>  Sat, 09 Aug 2014 18:20:38 +0200
+
 opi-themes (1.2) testing; urgency=low
 
   * Added images 

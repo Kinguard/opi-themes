@@ -12,3 +12,6 @@
 #filestable tbody tr.selected {
 	background-color: #F18700;
 }
+#slideshow .exit {
+	top: 30px;
+}
