@@ -1,3 +1,9 @@
+opi-themes (1.5) vili; urgency=low
+
+  * Updated styling of contacts list, added search field in contact view.
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 09 Apr 2015 13:19:36 +0200
+
 opi-themes (1.4) vili; urgency=low
 
   * Fixed styling of owncloud contact settings area.

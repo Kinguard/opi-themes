@@ -5,7 +5,16 @@
 	padding-top:10px;
 }
 #contactsHeader td.actions {
-	margin-right : 235px;
+	margin-right : 450px;
+}
+#body-user #header {
+	display : block;
+	visibility : hidden;
+}
+#body-user #header form {
+	display : block;
+	visibility : visible;
+	margin-right : 220px;
 }
 #app-navigation,#app-content {
 	padding-top : 43px;
@@ -27,6 +36,13 @@
 }
 button.primary {
 	background : #F18700;
+}
+#contactlist td form {
+	margin: 40px 0px 45px 40px;
+}
+#contactlist tr > td:not(.tel):not(.adr):not(.actions) {
+	max-width : 270px;
+	min-width : 270px;
 }
 #app-settings-content {
 	background-color : #272727;
