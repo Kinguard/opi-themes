@@ -1,3 +1,9 @@
+opi-themes (1.4) vili; urgency=low
+
+  * Fixed styling of owncloud contact settings area.
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 09 Apr 2015 11:45:19 +0200
+
 opi-themes (1.3) vili; urgency=low
 
   * Moved closing 'x' in files->slideshow not to collide with 'opi-apps' icon.

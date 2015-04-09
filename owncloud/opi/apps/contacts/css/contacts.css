@@ -11,7 +11,7 @@
 	padding-top : 43px;
 }
 
-#app-navigation li:hover a {
+#app-navigation li:hover a, #app-settings-content li:hover {
 	background-color : #f1c791;
 	color : #000000;
 }
@@ -28,4 +28,50 @@
 button.primary {
 	background : #F18700;
 }
-	
+#app-settings-content {
+	background-color : #272727;
+}
+#content #app-settings-content input[type=checkbox] {
+	vertical-align : text-bottom;
+	padding : 3px;
+	height : 16px;
+	width : 16px;
+}
+#app-settings-content .import-upload,#app-settings-content .import-status {
+    height: 40px;
+}
+
+#content #app-settings-content h2 {
+	margin-bottom : 10px;
+}
+
+#content #app-settings-content a.share {
+	background-image: url('../../../core/img/actions/share_white.svg');
+}
+#content #app-settings-content li:hover a.share {
+	background-image: url('/oc/core/img/actions/share.svg');
+}
+#content #app-settings-content a.delete {
+	background-image: url('../../../core/img/actions/delete_white.svg');
+}
+#content #app-settings-content li:hover a.delete {
+	background-image: url('/oc/core/img/actions/delete.svg');
+}
+#content #app-settings-content a.download {
+	background-image: url('../../../core/img/actions/download_white.svg');
+}
+#content #app-settings-content li:hover a.download {
+	background-image: url('/oc/core/img/actions/download.svg');
+}
+#content #app-settings-content a.globe {
+	background-image: url('../../../core/img/actions/public_white.svg');
+}
+#content #app-settings-content li:hover a.globe {
+	background-image: url('/oc/core/img/actions/public.svg');
+}
+#content #app-settings-content a.edit {
+	background-image: url('../../../core/img/actions/rename_white.svg');
+}
+#content #app-settings-content li:hover a.edit {
+	background-image: url('/oc/core/img/actions/rename.svg');
+}
