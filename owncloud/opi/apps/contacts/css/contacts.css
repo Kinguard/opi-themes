@@ -37,6 +37,9 @@
 button.primary {
 	background : #F18700;
 }
+#contactsheader {
+	display : table-row !important;
+}
 #contactlist td form {
 	margin: 40px 0px 45px 40px;
 }
