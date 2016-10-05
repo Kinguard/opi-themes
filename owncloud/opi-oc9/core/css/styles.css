@@ -1,0 +1,110 @@
+
+
+/* header color */
+/* this is the main brand color */
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+	background-color: #F18700;
+}
+
+/* log in screen background color */
+/* gradient of the header color and a brighter shade */
+/* can also be a flat color or an image */
+#body-login {
+	background-image : url('../img/OpenProducts_Pattern.png');
+	background-color :  #ffffff;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	border-style : solid;
+	border-width : 10px;
+	border-color : #F18700;
+}
+
+.primary, input.primary[type="submit"], input.primary[type="button"], button.primary, .button.primary {
+    background-color: #F18700;
+    border: 1px solid #000;
+    color: #ddd;
+}
+
+/* primary action button, use sparingly */
+/* header color as border, brighter shade again, here as background */
+
+#app-navigation{
+	display:	none;
+}
+#gallery-button {
+	display:	none !important;
+}
+#app-navigation + #app-content #controls {
+	left : 47px;
+	top : 0px;
+}
+#searchbox {
+	margin-top : 10px;
+	margin-right : 290px;
+	background-color : #F18700;
+}
+#header #owncloud, #header .header-appname-container, #header #settings {
+	display: none;
+}
+#body-user #header {
+	height : 0px;
+}
+#content-wrapper {
+	padding-top : 0px;
+}
+
+input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
+    background-color: rgba(241, 135, 00, 0.7);
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="button"]:hover, input[type="button"]:focus,
+button:hover, button:focus, .button:hover, .button:focus,
+.button a:focus, select:hover, select:focus, select:active {
+	background-color: rgba(241, 154, 43, 0.9);
+	color: #111;
+}
+
+div.crumb {
+	background : rgba(0, 0, 0, 0) url(../img/breadcrumb.svg) no-repeat scroll right center / auto 24px;
+}
+
+table tr[data-type="dir"] td.filename a.name span.nametext {
+    font-weight: bold;
+}
+
+#searchresults tbody tr.selected, #filestable tbody tr.selected {
+	background-color: #F18700;
+}
+#searchresults tbody tr:hover, tbody tr:active, #filestable tbody tr:hover, tbody tr:active {
+	background-color : #f1c791;
+}
+
+table.multiselect thead {
+	left : 5px;
+	top : 45px;
+}
+table.multiselect thead th {
+	background-color : #f1c791;
+}
+
+
+span.icon-folder, td[style*="folder.svg"], div[style*="folder.svg"], a[style*="folder.svg"] {
+	background-image : url(../img/filetypes/folder.svg) !important;
+}
+td[style*="folder-shared.svg"], div[style*="folder-shared.svg"], a[style*="folder-shared.svg"] {
+	background-image : url(../img/filetypes/folder-shared.svg) !important;
+}
+td[style*="folder-external.svg"], div[style*="folder-external.svg"], a[style*="folder-external.svg"] {
+	background-image : url(../img/filetypes/folder-external.svg) !important;
+}
+td[style*="folder-public.svg"], div[style*="folder-public.svg"], a[style*="folder-public.svg"] {
+	background-image : url(../img/filetypes/folder-public.svg) !important;
+}
+td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="folder-starred.svg"] {
+	background-image : url(../img/filetypes/folder-starred.svg) !important;
+}
+
