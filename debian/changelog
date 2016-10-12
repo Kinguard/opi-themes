@@ -1,3 +1,15 @@
+opi-themes (1.9) vili; urgency=medium
+
+  * Added theme for OC9 "contacts" and "calendar" 
+
+ -- PA Nilsson <pa@openproducts.se>  Wed, 12 Oct 2016 15:50:07 +0200
+
+opi-themes (1.8) vili; urgency=medium
+
+  * Added theme for OC9 "files-app" 
+
+ -- PA Nilsson <pa@openproducts.se>  Wed, 05 Oct 2016 15:11:50 +0200
+
 opi-themes (1.7) vili; urgency=low
 
   * Fixed typo in contacs style sheet

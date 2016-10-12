@@ -5,7 +5,7 @@
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-	background-color: #F18700;
+	background-color: #F18800;
 }
 
 /* log in screen background color */
@@ -19,36 +19,46 @@
 	background-position:center;
 	border-style : solid;
 	border-width : 10px;
-	border-color : #F18700;
+	border-color : #F18800;
+}
+#body-login p.info, #body-login p.info a, #body-login #showAdvanced, #body-login form input[type="checkbox"] + label {
+    color: #000;
+}
+#body-login p.info a:hover, #body-login form input[type="checkbox"] + label:hover {
+	color : #888;
 }
 
-.primary, input.primary[type="submit"], input.primary[type="button"], button.primary, .button.primary {
-    background-color: #F18700;
-    border: 1px solid #000;
-    color: #ddd;
+	
+
+#header .logo {
+	background-image : url('../img/logo.svg');
 }
 
-/* primary action button, use sparingly */
-/* header color as border, brighter shade again, here as background */
 
-#app-navigation{
-	display:	none;
-}
 #gallery-button {
 	display:	none !important;
 }
-#app-navigation + #app-content #controls {
-	left : 47px;
+#app-content #controls {
+	/* left : 47px;*/
 	top : 0px;
 }
+
 #searchbox {
-	margin-top : 10px;
+	margin-top : 9px;
 	margin-right : 290px;
-	background-color : #F18700;
+	background-color : #F18800;
+	transition: all 0.3s ease 0s;
+	opacity : 1;
 }
+
+#searchbox:hover {
+	background-color : #be6500;
+}
+
 #header #owncloud, #header .header-appname-container, #header #settings {
 	display: none;
 }
+	
 #body-user #header {
 	height : 0px;
 }
@@ -56,20 +66,56 @@
 	padding-top : 0px;
 }
 
-input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
-    background-color: rgba(241, 135, 00, 0.7);
+select {
+    background-color: #fff;
+	transition: all 0.3s ease 0s;
+	color : #000;
+
 }
 
+input[type="submit"], input[type="button"], button, .button, #quota, .pager li a,
+input.primary[type="button"]
+{
+    background-color: #f18800;
+	transition: all 0.3s ease 0s;
+	color : #fff;
+}
+
+.primary, input.primary[type="submit"], input.primary[type="button"], button.primary, .button.primary {
+    background-color: #f18800;
+    border : 1px solid rgba(240, 240, 240, 0.9);
+    color: #fff;
+}
+
+button[ng-click="cancel()"],button[ng-click="cancel()"]:hover {
+	background-color : #000;
+	color : #fff;
+}
+
+.primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover,
+.primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus, 
+input[type="submit"]:hover, input[type="submit"]:focus,
+.button a:focus,
 input[type="submit"]:hover, input[type="submit"]:focus,
 input[type="button"]:hover, input[type="button"]:focus,
-button:hover, button:focus, .button:hover, .button:focus,
-.button a:focus, select:hover, select:focus, select:active {
-	background-color: rgba(241, 154, 43, 0.9);
-	color: #111;
+button:hover, button:focus,
+.button:hover, .button:focus,
+.button a:focus
+{
+	background-color: #be6500;
+	color: #fff;
 }
 
 div.crumb {
-	background : rgba(0, 0, 0, 0) url(../img/breadcrumb.svg) no-repeat scroll right center / auto 24px;
+	background : rgba(0, 0, 0, 0) url(../img/breadcrumb.svg) no-repeat scroll right top / auto 30px;
+}
+#controls .actions {
+	padding: 8px;
+	height : 30px;
+}
+#controls .button {
+	padding : 2px 5px;
+	height : 28px;
 }
 
 table tr[data-type="dir"] td.filename a.name span.nametext {
@@ -77,7 +123,7 @@ table tr[data-type="dir"] td.filename a.name span.nametext {
 }
 
 #searchresults tbody tr.selected, #filestable tbody tr.selected {
-	background-color: #F18700;
+	background-color: #F18800;
 }
 #searchresults tbody tr:hover, tbody tr:active, #filestable tbody tr:hover, tbody tr:active {
 	background-color : #f1c791;

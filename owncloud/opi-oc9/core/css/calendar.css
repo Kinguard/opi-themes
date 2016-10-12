@@ -1,0 +1,33 @@
+#app-content {
+	padding-top : 50px;
+}
+#app-navigation {
+	padding-top : 38px;
+}
+
+#app-navigation .togglebuttons .button {
+	width : 55px;
+	color : #555;
+}
+
+#app-navigation .datepicker-heading .btn-date, #app-navigation .togglebuttons .button.active {
+	background-color: #f18700;
+    color: #ffffff;
+}
+	
+#datepicker table tbody button {
+	padding : 6px 7px;
+	color : #fff;
+}
+#app-navigation .togglebuttons .button.today:focus, #datepicker table tbody button.active {
+	background-color : #f1c791;
+	color : #000;
+}
+
+.modal-open .modal.popover, .modal-open .modal.import {
+	background-color : #f7f7f7;
+}
+.modal-content form fieldset:first-child {
+	background-color : #fff;
+}
+	
