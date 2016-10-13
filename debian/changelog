@@ -1,3 +1,9 @@
+opi-themes (1.10) vili; urgency=medium
+
+  * Moved calendar css into apps.css 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 13 Oct 2016 13:30:24 +0200
+
 opi-themes (1.9) vili; urgency=medium
 
   * Added theme for OC9 "contacts" and "calendar" 
