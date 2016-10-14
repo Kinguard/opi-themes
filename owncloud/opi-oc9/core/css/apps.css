@@ -134,11 +134,6 @@ background-image : url("../img/actions/share_black.svg");
 	background: linear-gradient(white, #f7f7f7);
 }
 
-/*
-#app-content {
-	padding-top : 50px;
-}
-*/
 
 #app-navigation {
 	padding-top : 38px;
@@ -148,11 +143,21 @@ background-image : url("../img/actions/share_black.svg");
 	background : #f18800 none;
 	border: 1px solid #f18800;
 }
+/* settings -> personal */
+
+#body-settings #header,#body-settings #passwordform {
+	display : none;
+}
+
+#body-settings #displayName {
+	disabled : "disabled";
+}
 
 /* Contact specific, contacts app does not seem to load "contacts.css" for apps/contacts/css folder */
 .app-contacts .newAddressBookSubmit {
 	opacity : 1;
 }
+
 .app-contacts .app-content-detail, .app-content-list {
 	padding-top : 50px;
 	height : unset;

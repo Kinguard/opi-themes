@@ -1,3 +1,9 @@
+opi-themes (1.11) vili; urgency=medium
+
+  * Added theming to settings/personal 
+
+ -- PA Nilsson <pa@openproducts.se>  Fri, 14 Oct 2016 09:44:15 +0200
+
 opi-themes (1.10) vili; urgency=medium
 
   * Moved calendar css into apps.css 
