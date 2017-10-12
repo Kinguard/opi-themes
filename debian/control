@@ -7,7 +7,9 @@ Standards-Version: 3.9.4
 
 Package: opi-themes
 Architecture: all
-Depends: 
+Depends: ${misc:Depends},
+ nextcloud,
+ roundcubemail
 Conflicts: 
-Description: OPI access
- Provieds OPI themes for roundcube and owncloud
+Description: OPI Themes
+ Provieds themes for roundcube and nextcloud web applications
