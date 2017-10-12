@@ -1,3 +1,6 @@
 *~
 debian/opi-themes*
 debian/files
+debian/debhelper*
+*sublime*
+target
