@@ -1,3 +1,9 @@
+opi-themes (2.0.0) vili; urgency=medium
+
+  * Inital files for keep implementation with nextcloud and roundcubemail
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 12 Oct 2017 10:25:46 +0200
+
 opi-themes (1.11) vili; urgency=medium
 
   * Added theming to settings/personal 
