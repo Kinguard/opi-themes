@@ -1,3 +1,9 @@
+opi-themes (2.0.1) vili; urgency=medium
+
+  * Added theme for roundcube. 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 19 Oct 2017 16:52:38 +0200
+
 opi-themes (2.0.0) vili; urgency=medium
 
   * Inital files for keep implementation with nextcloud and roundcubemail
