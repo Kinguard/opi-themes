@@ -1,3 +1,9 @@
+opi-themes (2.0.2) vili; urgency=medium
+
+  * Fixed typo in logo filename. 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 19 Oct 2017 17:02:35 +0200
+
 opi-themes (2.0.1) vili; urgency=medium
 
   * Added theme for roundcube. 
