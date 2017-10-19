@@ -239,7 +239,7 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 {
 	box-shadow : inset 2px 0 #F18800;
 }
-#app-navigation ul > li.active
+#content:not(.app-calendar) #app-navigation ul > li.active
 {
 	background-color : #F18800;
 }
