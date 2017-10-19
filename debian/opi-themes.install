@@ -1,4 +1,3 @@
-x-cloud/opi /usr/share/nextcloud/themes
-x-cloud/opi-oc9 /usr/share/nextcloud/themes
+x-cloud/kgp-keep /usr/share/nextcloud/themes
 roundcube/opi /usr/share/roundcube/skins
 
