@@ -1,3 +1,16 @@
+opi-themes (2.0.4) vili; urgency=medium
+
+  * Fixed broken install, Closes #404 
+  * Fixes non-readable "edit dropbox", Closes #402
+
+ -- PA Nilsson <pa@openproducts.se>  Mon, 04 Dec 2017 15:23:10 +0100
+
+opi-themes (2.0.3) vili; urgency=medium
+
+  * Updated gallery theming, closes #391 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 09 Nov 2017 16:55:38 +0100
+
 opi-themes (2.0.2) vili; urgency=medium
 
   * Fixed typo in logo filename. 

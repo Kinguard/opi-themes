@@ -26,10 +26,62 @@
 	background-image : url('../img/logo.svg');
 }
 
+.app_gallery #body-user header {
+	/* hide header on gallery page */
+	display : none;
+}
+.app_gallery #body-user #controls {
+	top : 0px;
+}
+
+.app_gallery #controls .button {
+	height : 36px; /* reset button height */
+}
+
+.app_gallery #controls span.right {
+	margin-right: 250px;
+}
+
+.app_gallery #controls .actions {
+	padding : 0px;
+}
+.app_gallery #controls .icon-add {
+	padding-left : 10px;
+	padding-top : 14px;
+}
+.app_gallery #controls .right div.button {
+	padding-left : 10px;
+	padding-top : 7px;
+}
+
+.app_gallery #controls .sorting.active-button {
+	padding-top : 6px;
+}
+
+.app_gallery #controls .sorting.active-button {
+	border : 1px solid rgba(241, 136, 0, .9);
+	margin-top : 6px;
+	height: 34px;
+}
+#controls #uploadprogressbar .label.inner,
+.app-calendar #app-navigation .app-navigation-entry-menu  button:hover,
+.app-calendar #app-navigation .app-navigation-entry-menu  button
+ {
+	color : #000;
+}
+
+#slideshow .slideshow-menu, #slideshow input.exit {
+	top:25px;
+}
 
 #gallery-button {
 	display:	none !important;
 }
+
+#filelist-button.button {
+	display : none;
+}
+
 #app-content #controls {
 	/* left : 47px;*/
 	top : 0px;
