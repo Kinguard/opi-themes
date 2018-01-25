@@ -65,7 +65,10 @@
 }
 #controls #uploadprogressbar .label.inner,
 .app-calendar #app-navigation .app-navigation-entry-menu  button:hover,
-.app-calendar #app-navigation .app-navigation-entry-menu  button
+.app-calendar #app-navigation .app-navigation-entry-menu  button,
+.app-tasks #app-navigation .app-navigation-entry-menu li > a:hover,
+.app-tasks #app-navigation .app-navigation-entry-menu li > a
+
  {
 	color : #000;
 }
@@ -394,12 +397,73 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 .app-contacts .newAddressBookSubmit {
 	opacity : 1;
 }
-
 .app-contacts .app-content-detail, .app-content-list {
-	padding-top : 50px;
 	height : unset;
 }
+.app-contacts .app-content-detail, .app-content-list, .app-tasks #app-content {
+	padding-top : 50px;
+}
+/* Tasks specific */
+html.app_tasks form.searchbox {
+	display: none;
+}
+#content.app-tasks .icon.collection-all {
+	background-position : -200px -20px;
+}
+#content.app-tasks .icon.collection-week {
+	background-position : -220px -20px;
+}
+#content.app-tasks .icon.collection-today {
+	background-position : -240px -39px;
+}
+#content.app-tasks .icon.collection-current {
+	background-position : -240px -100px;
+}
+#content.app-tasks .icon.collection-completed {
+	background-position : -100px -20px;
+}
+#content.app-tasks .icon.collection-starred {
+	background-position : -20px -20px;
+}
+/*
+#content.app-tasks li.task-item .task-body .icon.task-star.high, #content.app-tasks div.task-item .task-body .icon.task-star.high {
+	background-position : -160px -40px !important;	
+}
 
+#content.app-tasks .icon.detail-star.high {
+	background-position : -60px -100px !important;
+}
+*/
+#content.app-tasks .icon.collection-today {
+	color : #fff;
+	text-shadow: none;
+}
+.app-tasks #app-content .sortorder-dropdown {
+	top : 118px;
+}
+.app-tasks div.percentdone {
+	background-color: #f18800 !important;
+}
+.app-tasks #app-navigation li.list:not(.active) .app-navigation-entry-utils-menu-button {
+    /* display: inherit; */
+    background-image : url('../img/actions/more.svg?v=1');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.app-tasks #app-settings-content li select {
+	color : #fff;
+}
+.app-tasks #app-sidebar {
+	min-width: 235px;
+}
+.app-tasks #app-sidebar div.content-wrapper .body .section.editing {
+	height: 90px;
+}
+.app-tasks #app-sidebar .timepicker-input {
+	width : 50px;
+	text-align: center;
+}
 /* Calendar specific */
 #fullcalendar {
 	padding-top : 50px;
