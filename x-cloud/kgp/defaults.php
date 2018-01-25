@@ -41,7 +41,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		return 'https://owncloud.org';
+		return 'https://nextcloud.com';
 	}
 
 	/**
@@ -49,7 +49,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getSyncClientUrl() {
-		return 'https://owncloud.org/install';
+		return 'https://nextcloud.com/install/#install-clients';
 	}
 
 	/**
@@ -57,7 +57,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getiOSClientUrl() {
-		return 'https://itunes.apple.com/us/app/owncloud/id543672169?mt=8';
+		return 'https://itunes.apple.com/us/app/nextcloud/id1125420102?mt=8';
 	}
 
 	/**
@@ -65,7 +65,7 @@ class OC_Theme {
 	 * @return string AppId
 	 */
 	public function getiTunesAppId() {
-		return '543672169';
+		return '1125420102';
 	}
 
 	/**
@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getAndroidClientUrl() {
-		return 'https://play.google.com/store/apps/details?id=com.owncloud.android';
+		return 'https://play.google.com/store/apps/details?id=com.nextcloud.client';
 	}
 
 	/**
@@ -81,7 +81,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getDocBaseUrl() {
-		return 'https://doc.owncloud.org';
+		return 'https://docs.nextcloud.com';
 	}
 
 	/**
@@ -89,7 +89,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'OPI - Really Important Stuff Inside';
+		return "KEEP - Let's Keep It Between Us";
 	}
 
 	/**
@@ -97,7 +97,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'OPI - Really Important Stuff Inside';
+		return "KEEP - Let's Keep It Between Us";
 	}
 
 	/**
@@ -105,7 +105,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'OPI - Really Important Stuff Inside';
+		return "KEEP - Let's Keep It Between Us";
 	}
 
 	/**
@@ -121,7 +121,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return 'OPI - Really Important Stuff Inside';
+		return "KEEP - Let's Keep It Between Us";
 	}
 
 	/**
