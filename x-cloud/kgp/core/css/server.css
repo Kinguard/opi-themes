@@ -92,7 +92,7 @@
 
 #searchbox {
 	margin-top : 8px;
-	margin-right : 220px;
+	margin-right : 250px;
 	background-color : #F18800;
 	transition: all 0.3s ease 0s;
 	opacity : 1;
@@ -100,12 +100,18 @@
 	min-height: 28px;
 }
 
-#searchbox:hover {
+.searchbox input[type="search"]:hover {
 	background-color : #be6500;
 }
 
-#header #nextcloud, #header .header-appname-container, #header #settings {
-	//display: none;
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
+
+	background-color : #f19a2b !important;
+}
+
+
+#header #contactsmenu, #header #settings {
+	display: none;
 }
 	
 #body-user #header {
@@ -303,7 +309,7 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
     opacity: 0.6;
 }
 
-#app-navigation .nav-icon-sharingin, #app-navigation .nav-icon-sharingout, #app-navigation .icon-share,.app-calendar .icon-shared {
+#app-navigation .nav-icon-sharingin, #app-navigation .nav-icon-sharingout, #app-navigation .icon-share, .addressbooklist-icon.icon-shared,.app-calendar .icon-shared {
 	background-image : url("../img/actions/share.svg");
 }
 #app-navigation .icon-close {
@@ -346,6 +352,9 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 
 #app-navigation[class*=.icon]:hover {
 	opacity : 1;
+}
+#app-navigation ul.addressBookList li .action:hover {
+	opacity : 0.9;	
 }
 
 #app-settings-content, #app-settings-content a {
@@ -508,6 +517,18 @@ html.app_tasks form.searchbox {
 	border : 1px solid #ccc;
 }
 
+#app-navigation .app-navigation-list-item .dropdown-menu li > a {
+	color : #000;
+}
+
+#app-navigation .app-navigation-list-item .dropdown-menu li.active > a {
+	color : #fff;
+}
+
+#app-navigation .app-navigation-list-item .dropdown-menu li.active {
+	background-color: #f18800 !important;
+}
+
 .app-calendar .modal-open .modal.popover, .app-calendar .modal-open .modal.import {
 	background-color : #f7f7f7;
 }
@@ -526,3 +547,7 @@ html.app_tasks form.searchbox {
 	background-image : url("../img/actions/download_black.svg");
 }
 	
+/* Public share */
+#body-public #header {
+	background-color: #222222;
+}
