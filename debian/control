@@ -9,7 +9,8 @@ Package: opi-themes
 Architecture: all
 Depends: ${misc:Depends},
  nextcloud,
- roundcubemail
+ roundcubemail,
+ kinguard-utils (>= 1.13)
 Conflicts: 
 Description: OPI Themes
  Provieds themes for roundcube and nextcloud web applications
