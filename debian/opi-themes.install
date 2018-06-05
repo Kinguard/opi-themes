@@ -1,3 +1,4 @@
 x-cloud/kgp /usr/share/nextcloud/themes
 roundcube/kgp /usr/share/roundcube/skins
+theme.php /usr/share/opi-themes
 

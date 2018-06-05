@@ -1,3 +1,9 @@
+opi-themes (2.0.9) vili; urgency=medium
+
+  * Added php function to read theme from systemconfig.json 
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 05 Jun 2018 11:18:59 +0200
+
 opi-themes (2.0.8) vili; urgency=medium
 
   * Updated styles for contacts and calendar, closes #449, #455
