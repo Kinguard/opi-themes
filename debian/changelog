@@ -1,3 +1,9 @@
+opi-themes (2.0.10) vili; urgency=medium
+
+  * Move php sysconfig wrapper to kinguard-utils 
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 03 Jul 2018 11:32:31 +0200
+
 opi-themes (2.0.9) vili; urgency=medium
 
   * Added php function to read theme from systemconfig.json 
