@@ -24,14 +24,8 @@ case "$1" in
     	if [ -z "$2" ]
     	then
     		# old version is empty, so a fresh install
-    		# enable themes.
-    		
-    		#cd /usr/share/nextcloud/
-    		#sudo -u www-data php occ config:app:set --value "no" theming enabled
-    		#sudo -u www-data php occ config:system:set --value "kgp" theme
-    		sed -i 's/^\(.*theme.*\,\)/\t\t"theme" => "kgp",/' /usr/share/nextcloud/config/kgp.config.php
-
-    		sed -i 's/^\(.*skin.*"\).*\"\;/\1kgp\"\;/' /usr/share/roundcube/config/config.inc.php
+    		# enable theme.
+            kgp-sysinfo -c webapps -k theme -w "op"
     	fi
 
 		# determine system type
@@ -52,21 +46,21 @@ case "$1" in
 		esac
 
     	
-    	if [ ! -L /usr/share/nextcloud/themes/kgp/core/img/logo-type-white.png ]
+    	if [ ! -L /usr/share/nextcloud/themes/op/core/img/logo-type-white.png ]
     	then
 			# create link to logo.	
-			ln -s /usr/share/nextcloud/themes/kgp/core/img/logo-${sysTypeText}-white.png /usr/share/nextcloud/themes/kgp/core/img/logo-type-white.png
+			ln -s /usr/share/nextcloud/themes/op/core/img/logo-${sysTypeText}-white.png /usr/share/nextcloud/themes/op/core/img/logo-type-white.png
 		fi
 
-    	if [ ! -L /usr/share/roundcube/skins/kgp/images/logo-type-white.png ]
+    	if [ ! -L /usr/share/roundcube/skins/op/images/logo-type-white.png ]
     	then
 			# create link to logo.	
-			ln -s /usr/share/roundcube/skins/kgp/images/logo-${sysTypeText}-white.png /usr/share/roundcube/skins/kgp/images/logo-type-white.png
+			ln -s /usr/share/roundcube/skins/op/images/logo-${sysTypeText}-white.png /usr/share/roundcube/skins/op/images/logo-type-white.png
 		fi
-    	if [ ! -L /usr/share/roundcube/skins/kgp/images/logo-type-RGB.png ]
+    	if [ ! -L /usr/share/roundcube/skins/op/images/logo-type-RGB.png ]
     	then
 			# create link to logo.	
-			ln -s /usr/share/roundcube/skins/kgp/images/logo-${sysTypeText}-RGB.png /usr/share/roundcube/skins/kgp/images/logo-type-RGB.png
+			ln -s /usr/share/roundcube/skins/op/images/logo-${sysTypeText}-RGB.png /usr/share/roundcube/skins/op/images/logo-type-RGB.png
 		fi
 
     ;;

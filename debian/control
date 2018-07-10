@@ -8,8 +8,7 @@ Standards-Version: 3.9.4
 Package: opi-themes
 Architecture: all
 Depends: ${misc:Depends},
- nextcloud,
- roundcubemail,
+ kgp-themes,
  kinguard-utils (>= 1.13)
 Conflicts: 
 Description: OPI Themes
