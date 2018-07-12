@@ -1,0 +1,200 @@
+/* import default kinguard theme */
+@import url('../../../kgp/core/css/server.css');
+
+/* log in screen background color */
+/* gradient of the header color and a brighter shade */
+/* can also be a flat color or an image */
+#body-login {
+	background-image : url('../img/OpenProducts_Pattern.png');
+	border-color : #F18800;
+}
+
+#controls {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#header .logo-icon {
+	background-image : url('../img/logo-type-white.png') !important;
+	width: 80px;
+
+}
+.app_gallery #controls .sorting.active-button {
+	border : 1px solid rgba(241, 136, 0, .9);
+}
+
+
+#searchbox,
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid
+{
+	background-color : #F18800;
+}
+
+
+input[type="submit"], input[type="button"], button, .button, .pager li a,
+input.primary[type="button"]
+{
+    background-color: #f18800;
+    opacity: 0.7;
+}
+
+.primary, input.primary[type="submit"], input.primary[type="button"], button.primary, .button.primary {
+    background-color: #f18800;
+}
+
+
+.primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover,
+.primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus, 
+input[type="submit"]:hover, input[type="submit"]:focus,
+.button a:focus,
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="button"]:hover, input[type="button"]:focus,
+button:hover, button:focus,
+.button:hover, .button:focus,
+.button a:focus,
+#controls .button > span[class*=" icon-"]
+{
+	background-color : #F18800;
+	opacity : 1;
+}
+
+div.crumb {
+	background : rgba(0, 0, 0, 0) url(../img/breadcrumb.svg) no-repeat scroll right top / auto 30px;
+}
+
+#controls .button > span[class*=" icon-"] {
+	opacity : 0.7;
+}
+#searchresults tbody tr.selected, #filestable tbody tr.selected {
+	background-color: #edba78;
+}
+
+
+#searchresults tbody tr:hover, tbody tr:active, #filestable tbody tr:hover, tbody tr:active {
+	background-color : #f1c791;
+}
+
+table.multiselect thead th {
+	background-color : #f1c791;
+}
+
+
+#app-navigation > ul > li.selected > a,
+#app-navigation > ul > li a.selected,
+#app-navigation > ul > li a.selected > a,
+#app-navigation > ul > li:hover > a,
+#app-navigation > ul > li:hover,
+#app-navigation > ul > li:focus > a,
+#app-navigation > ul > li:focus,
+#app-navigation #scrollable div.new-entity-container:hover,
+#app-navigation #scrollable div.new-entity-container:focus,
+#app-navigation #scrollable > ul > li:focus,
+#app-navigation #scrollable > ul > li:hover
+ 
+{
+	box-shadow : inset 2px 0 #be6500;
+}
+#app-navigation > ul > li.active,
+#app-navigation > ul > li.active > a,
+{
+	box-shadow : inset 2px 0 #F18800;
+}
+
+#content:not(.app-calendar) #app-navigation ul > li.active,
+#content:not(.app-calendar)  #app-navigation ul > li.active > a
+{
+	background-color : #F18800;
+	color : #fff;
+}
+
+#app-navigation .togglebuttons button:hover,
+#app-navigation .togglebuttons .button:hover,
+#app-navigation .togglebuttons .button.active,
+#app-navigation .togglebuttons .button.today:focus,
+#app-navigation .datepicker-heading button:hover,
+#app-navigation .datepicker-heading button:focus,
+#app-navigation #datepicker table tbody button.active {
+	background-color : #be6b00;
+}
+
+
+#app-settings .settings-fieldset .settings-upload {
+	background-color: #f18800;
+}
+#app-settings .settings-fieldset li.settings-fieldset-interior-upload:hover > span {
+	background-color : #be6500;
+}
+
+.ui-widget-header {
+	background : #f18800 none;
+	border: 1px solid #f18800;
+}
+
+.select2-results .select2-highlighted {
+	background-color : #f8eae3;
+	color : #000;
+}
+
+.ui-select-choices-row:hover {
+	background-color : #f18800;
+	color : #fff;	
+}
+
+.app-tasks div.percentdone {
+	background-color: #f18800 !important;
+}
+
+#app-navigation .datepicker-heading .button,
+#app-navigation .togglebuttons .button.focus,
+#app-navigation .togglebuttons .button
+ {
+	background-color: #f18800;
+}
+#app-navigation .app-navigation-list-item .dropdown-menu li.active {
+	background-color: #f18800 !important;
+}
+
+#app-navigation   .nav-icon-sharingin, #app-navigation   .nav-icon-sharingout, #app-navigation  .icon-share, .addressbooklist-icon.icon-shared,.app-calendar .icon-shared {
+	background-image : url("../img/actions/share.svg");
+}
+#app-navigation  .icon-close {
+	background-image : url("../img/actions/close.svg");
+}
+
+#app-navigation  .icon-more {
+	background-image : url("../img/actions/more.svg");
+}
+#app-navigation  .icon-public,
+#app-navigation  .nav-icon-sharinglinks {
+	background-image : url("../img/actions/public.svg");
+}
+#app-navigation  .icon-download {
+	background-image : url("../img/actions/download.svg");
+}
+#app-navigation  .icon-mail {
+	background-image : url("../img/actions/mail.svg");
+}
+#app-navigation  .nav-icon-trashbin, #app-settings  .icon-delete {
+	background-image : url("../img/actions/delete.svg");
+}
+
+#app-navigation  .nav-icon-favorites {
+	background-image : url("../img/actions/star.svg");
+}
+#app-navigation  .nav-icon-files {
+	background-image : url("../img/actions/folder.svg");
+}
+#app-navigation  .nav-icon-systemtagsfilter {
+	background-image : url("../img/actions/tag.svg");
+}
+#app-navigation  .nav-icon-recent {
+	background-image : url("../img/actions/recent.svg");
+}
+
+#app-navigation #quota .quota-container div {
+	background-color: #f18800;
+}
+
+/* Contact specific */
+.app-contacts #new-contact-button {
+	color : #fff;
+}

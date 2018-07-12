@@ -1,6 +1,7 @@
 opi-themes (2.0.11) vili; urgency=medium
 
   * Change theme name from kgp -> op 
+  * Build css/js minimized files.
 
  -- PA Nilsson <pa@openproducts.se>  Tue, 10 Jul 2018 14:39:02 +0200
 

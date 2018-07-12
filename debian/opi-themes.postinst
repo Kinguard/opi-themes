@@ -45,7 +45,6 @@ case "$1" in
 			;;
 		esac
 
-    	
     	if [ ! -L /usr/share/nextcloud/themes/op/core/img/logo-type-white.png ]
     	then
 			# create link to logo.	
