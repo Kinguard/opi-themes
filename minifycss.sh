@@ -4,11 +4,12 @@ OPTIND=1         # Reset in case getopts has been used previously in the shell.
 
 # Initialize our own variables:
 themename=op
+themelocation="/usr/share/opi-themes/"
 target=keep
 quiet="-q"
 
 # cmd-line overrides config file parameters.
-while getopts "cmt:d:vw" opt; do
+while getopts "cmrt:d:vw" opt; do
 	case "$opt" in
 	c)  copysrc=true
 		;;
@@ -17,6 +18,8 @@ while getopts "cmt:d:vw" opt; do
 	t)  themename=$OPTARG
 		;;
 	d)  target=$OPTARG
+		;;
+	r)  remove=true
 		;;
 	v)  quiet=""
 		;;
@@ -64,11 +67,19 @@ function run_minimize {
 
 function run_copysrc {
 	echo "Copying Nextcloud theme"
-	scp -r $quiet "x-cloud/${themename}" "$target:/usr/share/nextcloud/themes"
+	scp -r $quiet "x-cloud/${themename}" "$target:${themelocation}/nextcloud/"
 	echo "Copying Roundcube theme"
-	scp -r $quiet "roundcube/${themename}" "$target:/usr/share/roundcube/skins/"
+	scp -r $quiet "roundcube/${themename}" "$target:${themelocation}/roundcube/"
+	if [ ! -z "$remove" ]; then
+		ssh $target "find ${themelocation} -name '*.min.css' -type f -delete"
+	fi
 }
 
+function remove_minimized {
+	echo "Remove any minimized files"
+	find . -name "*.min.css" -type f -delete
+	find . -name "*.min.js" -type f -delete
+}
 
 if [ ! -z "$watch" ]; then 
 
@@ -92,6 +103,10 @@ if [ ! -z "$watch" ]; then
 
 	while inotifywait -r -e close_write $jssrc $csssrc
 	do
+		if [ ! -z "$remove" ]; then
+			remove_minimized
+		fi
+
 		if [ ! -z "$minimize" ]; then 
 			run_minimize
 		fi
@@ -102,6 +117,11 @@ if [ ! -z "$watch" ]; then
 	done
 
 fi
+
+if [ ! -z "$remove" ]; then
+	remove_minimized
+fi
+
 
 if [ ! -z "$minimize" ]; then 
 	run_minimize

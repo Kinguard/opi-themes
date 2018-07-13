@@ -13,4 +13,6 @@
 	dh $@ 
 
 override_dh_auto_build:
-	./minifycss.sh -m	
+	# remove any old .min.css / .min.js files
+	# and then run minimizer
+	./minifycss.sh -rm	

@@ -1,3 +1,9 @@
+opi-themes (2.0.12) vili; urgency=medium
+
+  * Install in /usr/share/opi-themes and symlink from applications. 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 12 Jul 2018 16:16:08 +0200
+
 opi-themes (2.0.11) vili; urgency=medium
 
   * Change theme name from kgp -> op 
