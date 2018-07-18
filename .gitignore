@@ -1,8 +1,14 @@
 *~
-#debian/opi-themes*
+debian/opi-themes/
 debian/files
 debian/debhelper*
 *sublime*
 target
 *.min.*
-
+.sass-cache
+node_modules/
+app.css
+build/
+.debhelper
+opi-themes.debhelper.log
+opi-themes.substvars

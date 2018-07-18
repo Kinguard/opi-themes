@@ -1,0 +1,41 @@
+{
+  "name": "op-theme",
+  "title": "OpenProducts Admin UI Theme",
+  "description": "Assets package with grunted CSS/SASS, JS, ftp-deploy etc.",
+  "version": "0.1.0",
+  "homepage": "https://www.openproducts.com",
+  "author": {
+    "name": "PA Nilsson",
+    "email": "pa@openproducts.se"
+  },
+  "bugs": "",
+  "license": "GPL-3.0",
+  "repository" :
+  { "type" : "git",
+    "url" : "https://github.com/Kinguard"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-qunit": "~0.2.0",
+    "grunt-contrib-sass": "^0.7.4",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-debian-package": "~0.1.9",
+    "grunt-ftpscript": "~0.1.7",
+    "angular-ui-bootstrap": "^2.3.1",
+    "angular-ui-utils": "^0.1.1",
+    "angular-underscore": "0.0.3",
+    "bootstrap-sass": "~3.3",
+    "font-awesome": "~4.4.0"
+  }
+}

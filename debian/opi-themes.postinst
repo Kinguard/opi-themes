@@ -64,6 +64,7 @@ case "$1" in
         rm -rf /usr/share/nextcloud/themes/op
         ln -s /usr/share/opi-themes/roundcube/op /usr/share/roundcube/skins/op
         ln -s /usr/share/opi-themes/nextcloud/op /usr/share/nextcloud/themes/op
+        ln -s /usr/share/opi-themes/admin/op /usr/share/opi-webadmin/frontend/themes/op
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

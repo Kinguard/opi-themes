@@ -38,7 +38,10 @@ function debug {
 }
 
 function run_minimize {
-	echo "Running minimizer"
+	if [ ! -z "$1" ]; then
+		cd $1
+	fi
+	echo "Running minimizer for $1"
 	echo "Minimizing javascripts"
 	srcdirs=$(find . -type f -name '*.js' | sed -r 's|/[^/]+$||' |sort -u)
 	debug "Found javafiles in:"
@@ -62,6 +65,7 @@ function run_minimize {
 		yui-compressor -o '.css$:.min.css' *.css
 		cd - >/dev/null
 	done
+	cd ..
 
 }
 
@@ -108,7 +112,8 @@ if [ ! -z "$watch" ]; then
 		fi
 
 		if [ ! -z "$minimize" ]; then 
-			run_minimize
+			run_minimize x-cloud
+			run_minimize roundcube
 		fi
 		if [ ! -z "$copysrc" ]; then 
 			run_copysrc
@@ -124,7 +129,8 @@ fi
 
 
 if [ ! -z "$minimize" ]; then 
-	run_minimize
+	run_minimize x-cloud
+	run_minimize roundcube
 fi
 	
 if [ ! -z "$copysrc" ]; then 
