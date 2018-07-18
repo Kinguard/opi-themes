@@ -1,3 +1,9 @@
+opi-themes (2.0.13) vili; urgency=medium
+
+  * Added admin theme 
+
+ -- PA Nilsson <pa@openproducts.se>  Wed, 18 Jul 2018 15:28:41 +0200
+
 opi-themes (2.0.12) vili; urgency=medium
 
   * Install in /usr/share/opi-themes and symlink from applications. 
