@@ -1,0 +1,266 @@
+@CHARSET "UTF-8";
+.hidden {
+	display:none;
+}
+.z0 {	z-index : 0 !important;}
+.z1 {	z-index : -1;}
+.z2 {	z-index : -2;}
+.z3 {	z-index : -3;}
+.z4 {	z-index : -4;}
+.z5 {	z-index : -5;}
+.z6 {	z-index : -6;}
+.z7 {	z-index : -7;}
+.z8 {	z-index : -8;}
+
+#confirm_logout,#confirm_logout_backdrop {
+	position:fixed;
+    padding:0;
+    margin:-8px;   /* wrapper has an offset of 8px */
+    width: 100%;
+    height: 100%;
+}
+#confirm_logout_backdrop {
+    background : #000000;
+    opacity : 0;	
+	z-index : 99;
+}
+#confirm_logout {
+	z-index : 100;
+}
+
+#confirm_logout div.logout_modal {
+	background : #f7f7f7;
+	max-width : 500px;
+	width : 80%;
+	height : 300px;
+	margin : auto;
+	margin-top : 15%;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	opacity : 1;
+}
+#confirm_logout div.content {
+	padding : 50px;
+}
+#confirm_logout p {
+	text-align : center;
+}
+#confirm_logout header {
+  padding: 30px 50px;
+  background: white;
+  position: relative;
+}
+#confirm_logout h1 {
+  font-size: 24px;
+  line-height: 1.45em;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-family: "brandon-grotesque", sans-serif;
+}
+#confirm_logout a.close-modal {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: 50px;
+  top: 28px;
+  cursor : pointer;
+}
+.btn {
+  min-width : 150px;
+  border-width: 2px;
+  font-size: 1em;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 1.45;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #f18800;
+  border-color: #f18800;
+}
+.btn-primary:hover {
+    background-color: #be6b00;
+    border-color: #b46500;
+    color: white;
+}
+.btn-default {
+  color: white;
+  background-color: #222222;
+  border-color: #222222;
+}
+#top_header {
+	position:fixed; right: 10px; top: 0px;
+	z-index : 99;
+	display : none;
+	font-size : small;
+}
+#top_header.frame_mail {
+	color : #FFF;	
+}
+#top-nav-logout {
+	display : inline-block;
+	margin-left : 25px;
+}
+
+#top-nav-logout img {
+	width : 45px;
+	vertical-align : middle;
+}
+#app-box {
+	padding-top : 10px;
+}
+#app-box a {
+	position:absolute;
+	right : 2px;
+	top : 2px;
+}
+
+#content {
+/*	position:absolute; left: 0; right: 0; top: 0; bottom:4px;*/
+}
+
+#op_wrapper iframe{
+	position:absolute; left: 0; right: 0; top: 0; bottom:4px;
+	width: 100%;
+	height : 100%;
+	border : 0px;
+	overflow : auto;
+}
+#op_nav #nav_OP_logo {
+	margin : 10px 5px 50px;
+}
+
+#op_nav button {
+	margin : 0px 5px 0px;
+}
+#op_nav button {
+	width : 50px;
+	height : 70px;
+	background : none repeat scroll 0 0 rgba(0,0,0,0);
+	padding : 3px;
+	border : 0px;
+	display : block;
+	cursor : pointer;
+}
+#op_nav button.active div {
+	color : #FFFFFF;
+}
+
+#op_nav div.nav_control {
+	cursor : pointer;
+	background-image : url('../img/icons-apps.svg');
+	width : 46px;
+	height : 45px;
+}
+/*
+#op_nav div.nav_control.hover,#op_nav button.active div.nav-icon {
+	background-image : url('../img/OP_ICONS_COMBINED_white.png');
+}
+*/
+#op_nav .nav_text {
+	color : #666;
+	font-size : 10px;
+}
+#op_nav .hover {
+	color : #FFFFFF;
+}
+#nav_mail {
+	background-position : 105px -7px;
+}
+#nav_files {
+	background-position : 150px -7px;
+}
+#nav_contacts {
+	background-position : 194px -50px;
+}
+#nav_cal {
+	background-position : 150px -50px;
+}
+#nav_gallery {
+	background-position : 102px -50px;
+}
+#nav_tasks {
+	background-position : 95px -89px;
+}
+#nav_admin {
+	background-position : 55px -7px;
+}
+
+#op_nav button.active #nav_mail, #nav_mail.hover {
+	background-position : 105px -200px;
+}
+#op_nav button.active #nav_files, #nav_files.hover {
+	background-position : 150px -200px;
+}
+#op_nav button.active #nav_contacts, #nav_contacts.hover {
+	background-position : 194px -243px;
+}
+#op_nav button.active #nav_cal, #nav_cal.hover {
+	background-position : 150px -243px;
+}
+#op_nav button.active #nav_gallery, #nav_gallery.hover {
+	background-position : 102px -243px;
+}
+#op_nav button.active #nav_tasks, #nav_tasks.hover {
+	background-position : 95px -282px;
+}
+#op_nav button.active #nav_admin, #nav_admin.hover {
+	background-position : 55px -200px;
+}
+
+
+
+
+
+#op_nav #nav_trigger {
+	width : 60px;
+	height : 23px;
+	position : absolute;
+	left : 53px;
+	top : 30%%;
+	background : #f18700;
+	z-index : 1000;
+	padding: 0 auto;
+	border-bottom-left-radius : 15px;
+	-moz-border-bottom-left-radius: 15px;
+	border-bottom-right-radius : 15px;
+	-moz-border-bottom-right-radius: 15pxx;
+}
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
