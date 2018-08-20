@@ -1,3 +1,9 @@
+opi-themes (2.0.14) vili; urgency=medium
+
+  * Include popbox and frames css files. 
+
+ -- PA Nilsson <pa@openproducts.se>  Mon, 20 Aug 2018 14:50:24 +0200
+
 opi-themes (2.0.13) vili; urgency=medium
 
   * Added admin theme 
