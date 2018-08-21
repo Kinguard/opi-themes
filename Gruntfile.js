@@ -72,7 +72,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'build/css',
             src: '*.css',
-            dest: './target/admin-themes/css'
+            dest: './target/admin-themes/op/css'
           }
         ]
       },
