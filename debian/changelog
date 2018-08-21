@@ -1,3 +1,9 @@
+opi-themes (2.0.15) vili; urgency=medium
+
+  * Cleanup of sass files. 
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 21 Aug 2018 15:07:20 +0200
+
 opi-themes (2.0.14) vili; urgency=medium
 
   * Include popbox and frames css files. 
