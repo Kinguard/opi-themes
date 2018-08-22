@@ -104,41 +104,6 @@ module.exports = function(grunt) {
       }
     },
 
-    ftpscript: { // Don't forget to set up your .ftppass file
-      jsDEV: {
-        options: {
-          host: 'dev.local', 
-          passive: false,
-          mkdir: false,
-          authKey:'key1'
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'build/js',
-            src: '<%= pkg.name %>.min.js',
-            dest: '/js/'
-          }
-        ]
-      },
-      cssDEV: {
-        options: {
-          host: 'dev.local', 
-          passive: false,
-          mkdir: false,
-          authKey:'key1'
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'build/css',
-            src: '*.css',
-            dest: '/css/'
-          }
-        ]
-      }
-    },
-
     watch: {
       js: {
         //files: '<%= concat.js.src %>',
@@ -159,38 +124,6 @@ module.exports = function(grunt) {
       //}      
     },
   
-    debian_package: {
-	    options: {
-		maintainer: {
-		    name: "PA Nilsson",
-		    email: "pa.nilsson@openproducts.se"
-		},
-		name: "opi-webfrontend",
-		short_description: "OPI Web frontend",
-		long_description: "OPI administrative web frontend",
-		version: "1.0",
-		build_number: "1",
-		postinst : {
-			src : "opi-webfronted.postinst.template"
-		},
-		directories: [
-		    '/usr/share/${name}',
-		    '/etc/nginx/apps'
-		]
-	    },
-	    files: [
-		{
-		    expand: true,       // enable dynamic expansion
-		    cwd: 'public/',      // src matches are relative to this path
-		    src: '*',              // actual pattern(s) to match
-		    dest: '/usr/share/opi-webfrontend'   // destination path prefix
-		},
-		{                       // use template in file path
-		    src:  'webfrontend-nginx.conf',
-		    dest: '/etc/nginx/apps'
-		}
-	    ]
-	  }
   });
 
   // These plugins provide necessary tasks.
@@ -200,9 +133,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-ftpscript');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-debian-package');
 
   // Default task.
   //grunt.registerTask('default', ['js','css','templates']);
