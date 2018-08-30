@@ -62,9 +62,15 @@ case "$1" in
         # make the theme available to the applications
         rm -rf /usr/share/roundcube/skins/op
         rm -rf /usr/share/nextcloud/themes/op
-        ln -s /usr/share/opi-themes/roundcube/op /usr/share/roundcube/skins/op
-        ln -s /usr/share/opi-themes/nextcloud/op /usr/share/nextcloud/themes/op
-        ln -s /usr/share/opi-themes/admin/op /usr/share/opi-webadmin/frontend/themes/op
+        if [ ! -L /usr/share/roundcube/skins/op ]; then
+            ln -s /usr/share/opi-themes/roundcube/op /usr/share/roundcube/skins/op
+        fi
+        if [ ! -L /usr/share/nextcloud/themes/op ]; then
+            ln -s /usr/share/opi-themes/nextcloud/op /usr/share/nextcloud/themes/op
+        fi
+        if [ ! -L /usr/share/opi-webadmin/frontend/themes/op ]; then
+            ln -s /usr/share/opi-themes/admin/op /usr/share/opi-webadmin/frontend/themes/op
+        fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
