@@ -21,7 +21,7 @@ set -e
 case "$1" in
     configure)
 
-    	if [ -z "$2" ]
+    	if ! theme=$(kgp-sysinfo -c webapps -k theme)
     	then
     		# old version is empty, so a fresh install
     		# enable theme.

@@ -1,3 +1,9 @@
+opi-themes (2.0.17) vili; urgency=medium
+
+  * Set theme parameter in sysconfig if it does not exist. 
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 30 Aug 2018 11:47:34 +0200
+
 opi-themes (2.0.16) vili; urgency=medium
 
   * Updated modules.
