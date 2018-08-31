@@ -74,9 +74,9 @@ function run_copysrc {
 	scp -r $quiet "x-cloud/${themename}" "$target:${themelocation}/nextcloud/"
 	echo "Copying Roundcube theme"
 	scp -r $quiet "roundcube/${themename}" "$target:${themelocation}/roundcube/"
-	if [ ! -z "$remove" ]; then
-		ssh $target "find ${themelocation} -name '*.min.css' -type f -delete"
-	fi
+	#if [ ! -z "$remove" ]; then
+	#	ssh $target "find ${themelocation} -name '*.min.css' -type f -delete"
+	#fi
 }
 
 function remove_minimized {
@@ -87,8 +87,8 @@ function remove_minimized {
 
 if [ ! -z "$watch" ]; then 
 
-	jssrc_=$(find . -type f -not -path './debian/*'  -name '*.js' | sed -r 's|/[^/]+$||' |sort -u)
-	csssrc_=$(find . -type f -not -path './debian/*'  -name '*.css' | sed -r 's|/[^/]+$||' |sort -u)
+	jssrc_=$(find . -type f -not -path './debian/*' -not -path './node_modules/*'  -name '*.js' | sed -r 's|/[^/]+$||' |sort -u)
+	csssrc_=$(find . -type f -not -path './debian/*' -not -path './node_modules/*'  -name '*.css' | sed -r 's|/[^/]+$||' |sort -u)
 
 	for dir in $jssrc_
 	do
@@ -101,7 +101,7 @@ if [ ! -z "$watch" ]; then
 
 	echo "Watching files"
 	debug "js sources in:"
-	debug $jssrc
+	debug "$jssrc"
 	debug "css sources in:"
 	debug "$csssrc"
 

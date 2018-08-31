@@ -1,3 +1,9 @@
+opi-themes (2.0.19) vili; urgency=medium
+
+  * Updates button colors on calendar buttons as a result of #487.
+
+ -- PA Nilsson <pa@openproducts.se>  Fri, 31 Aug 2018 12:23:35 +0200
+
 opi-themes (2.0.18) vili; urgency=medium
 
   * Fixed theme-link issue in postinst. 

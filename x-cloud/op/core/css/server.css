@@ -106,14 +106,14 @@ table.multiselect thead th {
 	color : #fff;
 }
 
-#app-navigation .togglebuttons button:hover,
-#app-navigation .togglebuttons .button:hover,
-#app-navigation .togglebuttons .button.active,
-#app-navigation .togglebuttons .button.today:focus,
-#app-navigation .datepicker-heading button:hover,
-#app-navigation .datepicker-heading button:focus,
-#app-navigation #datepicker table tbody button.active {
-	background-color : #be6b00;
+
+#app-navigation .datepicker-heading .button,
+#app-navigation .togglebuttons .button
+ {
+	color: #fff;
+	border-color : #fff;
+	border : 1px solid #fff;
+	background-color : #F18800;
 }
 
 
