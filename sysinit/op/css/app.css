@@ -1,0 +1,114 @@
+@keyframes loading-circle {
+  0% {
+    background: #f18800; }
+
+  50% {
+    background: white; }
+
+  100% {
+    background: #f18800; }
+}
+
+@-webkit-keyframes loading-circle {
+  0% {
+    background: #f18800; }
+
+  50% {
+    background: white; }
+
+  100% {
+    background: #f18800; }
+}
+
+@-ms-keyframes loading-circle {
+  0% {
+    background: #f18800; }
+
+  50% {
+    background: white; }
+
+  100% {
+    background: #f18800; }
+}
+
+@-moz-keyframes loading-circle {
+  0% {
+    background: #f18800; }
+
+  50% {
+    background: white; }
+
+  100% {
+    background: #f18800; }
+}
+
+@-o-keyframes loading-circle {
+  0% {
+    background: #f18800; }
+
+  50% {
+    background: white; }
+
+  100% {
+    background: #f18800; }
+}
+
+
+a {
+  color: #f18800;
+}
+a:hover, a:focus {
+    color: #a45d00;
+}
+.text-primary {
+  color: #F18800;
+}
+a.text-primary:hover {
+  color: #be6b00;
+}
+
+.bg-primary {
+  background-color: #F18800; }
+
+a.bg-primary:hover {
+  background-color: #be6b00; }
+
+#loading #loading-text {
+  background: #f18800;
+}
+
+#login {
+  background: white;
+}
+#login-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url(../img/bg-pattern.gif) no-repeat left bottom;
+  background-size: cover;
+  border: 10px solid #f18800;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #f18800;
+  border-color: #f18800;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: white;
+  background-color: #f18800;
+  border-color: #b46500;
+}
+
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  background-color: #f18800;
+  border-color: #f18800;
+}
+
+.btn-primary .badge {
+  color: #f18800;
+  background-color: white;
+}

@@ -5,9 +5,9 @@ debian/debhelper*
 *sublime*
 target
 *.min.*
+public/**/app.css
 .sass-cache
 node_modules/
-app.css
 build/
 .debhelper
 opi-themes.debhelper.log

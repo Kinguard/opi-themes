@@ -71,6 +71,10 @@ case "$1" in
         if [ ! -L /usr/share/opi-webadmin/frontend/themes/op ]; then
             ln -s /usr/share/opi-themes/admin/op /usr/share/opi-webadmin/frontend/themes/op
         fi
+
+        if [ ! -L /usr/share/opi-control/html/themes/op ]; then
+            ln -s /usr/share/opi-themes/sysinit/op /usr/share/opi-control/html/themes/op
+        fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
