@@ -63,17 +63,21 @@ case "$1" in
         rm -rf /usr/share/roundcube/skins/op
         rm -rf /usr/share/nextcloud/themes/op
         if [ ! -L /usr/share/roundcube/skins/op ]; then
+            mkdir -p /usr/share/roundcube/skins/
             ln -s /usr/share/opi-themes/roundcube/op /usr/share/roundcube/skins/op
         fi
         if [ ! -L /usr/share/nextcloud/themes/op ]; then
+            mkdir -p /usr/share/nextcloud/themes
             ln -s /usr/share/opi-themes/nextcloud/op /usr/share/nextcloud/themes/op
         fi
         if [ ! -L /usr/share/opi-webadmin/frontend/themes/op ]; then
+            mkdir -p /usr/share/opi-webadmin/frontend/themes
             ln -s /usr/share/opi-themes/admin/op /usr/share/opi-webadmin/frontend/themes/op
         fi
 
         if [ ! -L /usr/share/opi-control/html/themes/op ]; then
-            ln -s /usr/share/opi-themes/sysinit/op /usr/share/opi-control/html/themes/op
+            mkdir -p /usr/share/opi-control/web/themes
+            ln -s /usr/share/opi-themes/sysinit/op /usr/share/opi-control/web/themes/op
         fi
     ;;
 
