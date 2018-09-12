@@ -1,3 +1,9 @@
+opi-themes (2.0.21) vili; urgency=medium
+
+  * Fixed activiation of theme on install 
+
+ -- PA Nilsson <pa@openproducts.se>  Wed, 12 Sep 2018 13:08:44 +0200
+
 opi-themes (2.0.20) vili; urgency=medium
 
   * Added sysinit-theme 

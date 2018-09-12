@@ -4,7 +4,6 @@
 # see: dh_installdeb(1)
 
 set -e
-
 # summary of how this script can be called:
 #        * <postinst> `configure' <most-recently-configured-version>
 #        * <old-postinst> `abort-upgrade' <new version>
@@ -21,7 +20,7 @@ set -e
 case "$1" in
     configure)
 
-        if [ ! theme=$(kgp-sysinfo -c webapps -k theme) ] || [ -z "$2" ]
+        if ! kgp-sysinfo -c webapps -k theme || [ -z "$2" ]
     	then
             # empty theme parameter or old version is empty, so a fresh install
     		# enable theme.
@@ -75,7 +74,7 @@ case "$1" in
             ln -s /usr/share/opi-themes/admin/op /usr/share/opi-webadmin/frontend/themes/op
         fi
 
-        if [ ! -L /usr/share/opi-control/html/themes/op ]; then
+        if [ ! -L /usr/share/opi-control/web/themes/op ]; then
             mkdir -p /usr/share/opi-control/web/themes
             ln -s /usr/share/opi-themes/sysinit/op /usr/share/opi-control/web/themes/op
         fi
