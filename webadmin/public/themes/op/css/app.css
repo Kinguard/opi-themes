@@ -1,0 +1,86 @@
+/*** LAYOUT SPECIFICS ***/
+.color-green {
+  color: #009f6e; }
+
+.form-group.disabled .form-control {
+  color: #999; }
+
+#loading #loading-text {
+  background: #f18800; }
+
+#login-bg {
+  z-index: 1;
+  background: url(../img/bg-pattern.gif) no-repeat left bottom;
+  background-size: cover;
+  border: 10px solid #f18800; }
+
+#login {
+  background: white; }
+  #login .login-logo {
+    display: none; }
+
+a {
+  color: #f18800; }
+  a:focus, a:hover {
+    color: #be6b00; }
+
+.btn-primary {
+  background-color: #f18800;
+  color: white;
+  border-color: #f18800; }
+
+.btn-default {
+  background-color: #1a1a1a;
+  color: white;
+  border-color: #0d0d0d; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:hover {
+  background-color: #be6b00;
+  border-color: #d87a00; }
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover {
+  background-color: black;
+  color: white;
+  border-color: black; }
+
+#panel {
+  background: black;
+  overflow: auto; }
+  #panel h1 span.logo img {
+    width: 112px;
+    height: auto; }
+  #panel nav {
+    margin-top: 36px; }
+    #panel nav a:hover {
+      opacity: 1;
+      box-shadow: inset 2px 0 #f18800; }
+    #panel nav .active a {
+      background: #f18800;
+      color: white;
+      box-shadow: inset 2px 0 #f18800; }
+
+nav .home.active i {
+  background-image: url(../img/icons/menu/home.png); }
+nav .me.active i {
+  background-image: url(../img/icons/menu/profile.png); }
+nav .users.active i {
+  background-image: url(../img/icons/menu/users.png); }
+nav .mail.active i {
+  background-image: url(../img/icons/menu/mail.png); }
+nav .network.active i {
+  background-image: url(../img/icons/menu/network.png); }
+nav .backup.active i {
+  background-image: url(../img/icons/menu/backup.png); }
+nav .update.active i {
+  background-image: url(../img/icons/menu/update.png); }
+nav .logout.active i {
+  background-image: url(../img/icons/menu/logout.png); }
+nav .shutdown.active i {
+  background-image: url(../img/icons/menu/shutdown.png); }
+nav .help.active i {
+  background-image: url(../img/icons/menu/help.png); }
+
+div.progress-bar {
+  background-color: #f18800; }
+
+/*# sourceMappingURL=app.css.map */

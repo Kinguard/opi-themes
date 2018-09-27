@@ -1,4 +1,4 @@
-x-cloud/* 			/usr/share/opi-themes/nextcloud/
-roundcube/* 		/usr/share/opi-themes/roundcube/
-public/themes/* 	/usr/share/opi-themes/admin/
-sysinit/*  			/usr/share/opi-themes/sysinit/
+x-cloud/*		 			/usr/share/opi-themes/nextcloud/
+roundcube/*			 		/usr/share/opi-themes/roundcube/
+webadmin/public/themes/* 	/usr/share/opi-themes/admin/
+sysinit/*  					/usr/share/opi-themes/sysinit/

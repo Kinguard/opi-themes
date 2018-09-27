@@ -55,7 +55,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'build/js',
             src: '*.js',
-            dest: './target/admin-themes/js/'
+            dest: '../target/admin-themes/js/'
           }
 
         ]
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'build/css',
             src: '*.css',
-            dest: './target/admin-themes/op/css'
+            dest: '../target/admin-themes/op/css'
           }
         ]
       },
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'public/',
             src: '**',
-            dest: './target/'
+            dest: '../target/'
           }
         ]
       }
