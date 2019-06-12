@@ -1,3 +1,9 @@
+opi-themes (2.0.22) vili; urgency=medium
+
+  * Update deps
+
+ -- Tor Krill <tor@openproducts.se>  Wed, 12 Jun 2019 16:01:33 +0200
+
 opi-themes (2.0.21) vili; urgency=medium
 
   * Fixed activiation of theme on install 
