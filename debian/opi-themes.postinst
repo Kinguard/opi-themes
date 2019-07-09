@@ -20,7 +20,7 @@ set -e
 case "$1" in
     configure)
 
-        if ! kgp-sysinfo -c webapps -k theme || [ -z "$2" ]
+        if ! kgp-sysinfo -c webapps -k theme
     	then
             # empty theme parameter or old version is empty, so a fresh install
     		# enable theme.
