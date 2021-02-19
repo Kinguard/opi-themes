@@ -52,11 +52,13 @@ case "$1" in
 
         rm -f /usr/share/opi-themes/roundcube/op/images/logo-type-white.png 
 		# create link to logo.	
-		ln -s /usr/share/opi-themes/roundcube/op/images/logo-${sysTypeText}-white.png /usr/share/opi-themes/roundcube/op/images/logo-type-white.png
+		# not currently using this in RC
+		#ln -s /usr/share/opi-themes/roundcube/op/images/logo-${sysTypeText}-white.png /usr/share/opi-themes/roundcube/op/images/logo-type-white.png
 
         rm -f /usr/share/opi-themes/roundcube/op/images/logo-type-RGB.png 
 		# create link to logo.	
-		ln -s /usr/share/opi-themes/roundcube/op/images/logo-${sysTypeText}-RGB.png /usr/share/opi-themes/roundcube/op/images/logo-type-RGB.png
+		# not currently using this in RC
+		#ln -s /usr/share/opi-themes/roundcube/op/images/logo-${sysTypeText}-RGB.png /usr/share/opi-themes/roundcube/op/images/logo-type-RGB.png
 
         # make the theme available to the applications
         rm -rf /usr/share/roundcube/skins/op
@@ -78,6 +80,9 @@ case "$1" in
             mkdir -p /usr/share/opi-control/web/themes
             ln -s /usr/share/opi-themes/sysinit/op /usr/share/opi-control/web/themes/op
         fi
+        
+        # run required update for RC
+        /usr/share/roundcube/bin/updatecss.sh --dir /usr/share/roundcube/skins/op
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

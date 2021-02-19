@@ -22,3 +22,6 @@ override_dh_auto_build:
 	./minifycss.sh -rm	
 	cd webadmin && 	grunt
 	cd -
+	lessc -x roundcube/op/styles/styles.less > roundcube/op/styles/styles.css
+	lessc -x roundcube/op/styles/print.less > roundcube/op/styles/print.css
+	lessc -x roundcube/op/styles/embed.less > roundcube/op/styles/embed.css

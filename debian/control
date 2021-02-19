@@ -8,7 +8,8 @@ Build-Depends: debhelper (>= 8.0.0),
  npm,
  grunt,
  node-grunt-cli,
- ruby-sass
+ ruby-sass,
+ node-less
 Standards-Version: 3.9.4
 
 Package: opi-themes
