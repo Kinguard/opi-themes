@@ -1,3 +1,9 @@
+opi-themes (2.1.0~test2) vili; urgency=medium
+
+  * Updated Nextcloud theme 
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 09 Mar 2021 08:41:38 +0100
+
 opi-themes (2.1.0~test1) vili; urgency=medium
 
   * Updated Roundcube theme to be 'elastic' based. 
