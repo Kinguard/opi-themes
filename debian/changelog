@@ -1,3 +1,9 @@
+opi-themes (2.1.0) vili; urgency=medium
+
+  * Buster release
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 07 Sep 2021 11:02:47 +0200
+
 opi-themes (2.1.0~test2) vili; urgency=medium
 
   * Updated Nextcloud theme 
