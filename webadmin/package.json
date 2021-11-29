@@ -21,6 +21,7 @@
   },
   "scripts": {},
   "devDependencies": {
+	"extend": "*",
     "grunt": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
@@ -28,6 +29,8 @@
     "grunt-contrib-jshint": "*",
     "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+	"liftoff": "*",
+	"tslib": "*"
   }
 }

@@ -9,19 +9,22 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
+# Needed for debian node-less to work with nodesource nodejs pkg
+export NODE_PATH="/usr/share/nodejs/:/usr/lib/nodejs/"
+
 %:
 	dh $@ 
 
 override_dh_auto_configure:
-	cd webadmin && 	env HOME=$(CURDIR)/webadmin /usr/bin/nodejs /usr/bin/npm install
+	cd webadmin && 	env HOME=$(CURDIR)/webadmin /usr/bin/node /usr/bin/npm install
 	cd -
 
 override_dh_auto_build:
 	# remove any old .min.css / .min.js files
 	# and then run minimizer
 	./minifycss.sh -rm	
-	cd webadmin && 	grunt
+	cd webadmin && 	NODE_PATH="/usr/share/nodejs/:/usr/lib/nodejs/" grunt
 	cd -
-	lessc -x roundcube/op/styles/styles.less > roundcube/op/styles/styles.css
-	lessc -x roundcube/op/styles/print.less > roundcube/op/styles/print.css
-	lessc -x roundcube/op/styles/embed.less > roundcube/op/styles/embed.css
+	NODE_PATH="/usr/share/nodejs/:/usr/lib/nodejs/" lessc -x roundcube/op/styles/styles.less > roundcube/op/styles/styles.css
+	NODE_PATH="/usr/share/nodejs/:/usr/lib/nodejs/" lessc -x roundcube/op/styles/print.less > roundcube/op/styles/print.css
+	NODE_PATH="/usr/share/nodejs/:/usr/lib/nodejs/" lessc -x roundcube/op/styles/embed.less > roundcube/op/styles/embed.css
